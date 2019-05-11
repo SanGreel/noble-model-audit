@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from skater.core.explanations import Interpretation
 from skater.model import InMemoryModel
+import shap
 
 
 class FeatureSelector:
@@ -28,8 +29,16 @@ class FeatureSelector:
         self.interpreter = Interpretation(self.test_x, feature_names = self.test_x.columns)
         print("Done.")
 
-        
 
+        print("Building SHAP explainer for Tree Model")
+        self.explainer = shap.TreeExplainer(self.model)
+        print("Done.")
+
+        print("Computing SHAP values for first 100 test samples...")
+        self.shap_values = self.explainer.shap_values(test_x[:100])
+        print("Done.")
+
+        shap.initjs()
     
     def featureImportance(self):
         '''
@@ -84,6 +93,19 @@ class FeatureSelector:
         ax.set_title(title)
         ax.set_ylim(0, 1)
         ax.plot()
+
+    def shapSummaryPlot(self):
+        '''
+        Shows summary plot of SHAP calculated values
+        for each feature in the dataset relative to provided model.
+
+        Outputs a corresponding bar plot.
+        '''
+        shap.summary_plot(self.shap_values, 
+                              self.train_x, 
+                              plot_type="bar", 
+                              class_names = ["Recidive", "No recidive"],
+                              title = "SHAP values of RF model output trained on COMPAS data")
 
 
     
