@@ -7,21 +7,8 @@ from aequitas.plotting import Plot
 import matplotlib.pyplot as plt
 
 class BiasDetection:
-	def __init__(self, data_path):
-		self.df = self.get_data(data_path)
-		
-	def get_data(self, path):
-		df = pd.read_csv(path)
-		df = df[df['c_charge_degree'] != 'O']
-		df = df[df['is_recid'] != -1]
-		df = df[abs(df['days_b_screening_arrest'])<=30]
-		
-		df = df.rename(columns={'id':'entity_id', 'is_recid':'label_value'})
-		df.loc[df['score_text'] == 'Low', 'score'] = str(0.0)
-		df.loc[df['score_text'] != 'Low', 'score'] = str(1.0)
-		
-		df = df[['entity_id', 'score', 'label_value', 'race', 'sex', 'age_cat']]
-		return df
+	def __init__(self, df):
+		self.df = df
 		
 	def get_ratios(self, feature, target):
 		ratios = {}
