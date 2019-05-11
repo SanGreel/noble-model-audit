@@ -4,6 +4,7 @@ from aequitas.group import Group
 from aequitas.bias import Bias
 from aequitas.fairness import Fairness
 from aequitas.plotting import Plot
+import matplotlib.pyplot as plt
 
 class BiasDetection:
 	def __init__(self, data_path):
@@ -28,11 +29,11 @@ class BiasDetection:
 		for x in df[feature].unique():
 			labels = df[df[feature] == x][target]
 			counts = labels.value_counts()
-			ratios[x] = counts[1] / counts[0]
+			ratios[x] = counts[1] / (counts[0] + counts[1])
 			
 		return ratios
 
-	def check_dataset_bias(self, threshold=0.2):
+	def check_dataset_bias(self, threshold=0.15):
 		df = self.df
 		non_attr_cols = ['score', 'model_id', 'as_of_date', 'entity_id', 'rank_abs', 'rank_pct', 'id', 'label_value']
 		attr_cols = list(df.columns[~df.columns.isin(non_attr_cols)])
@@ -53,6 +54,18 @@ class BiasDetection:
 			'fair': is_fair,
 			'details': bias_summary
 		}
+		
+	def plot_dataset_bias(self, res, attr):
+		obj = res['details'][attr]['ratios']
+		names = list(obj.keys())
+		vals = list(obj.values())
+		
+		sorted_names = [x for _, x in sorted(zip(vals,names), key=lambda pair: pair[0])]
+		sorted_vals = sorted(vals)
+		color = '#339933' if res['details'][attr]['fair'] else '#990000'
+		
+		plt.title('Percentage of positive labels in *{}* group'.format(attr))
+		plt.barh(sorted_names, sorted_vals, color=color)
 		
 	def get_model_fairness(self, level='model'):
 		g = Group()
