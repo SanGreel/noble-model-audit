@@ -9,9 +9,9 @@
 
 ### Data
 ##### Compas dataset 
-https://github.com/propublica/compas-analysis \n
-https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
-https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm
+https://github.com/propublica/compas-analysis <br/>
+https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing <br/>
+https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm <br/>
 
 ### Instruction to reproduce
 1. Download [COMPAS dataset](https://github.com/propublica/compas-analysis/) into folder "data".
