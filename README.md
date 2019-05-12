@@ -18,7 +18,9 @@ There are plenty of existing solutions to inspect models. Many of them work fine
 4. Valerii Veseliak, [ValeriyVeseliak](https://github.com/ValeriyVeseliak).
 
 ---
-### Result examples
+### Audit examples
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_sex.png)
+
 
 ---
 ### Data
