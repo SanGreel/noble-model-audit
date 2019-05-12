@@ -6,7 +6,7 @@
 3. Oleh Onyshchak, [OlehOnyshchak](https://github.com/OlehOnyshchak).
 4. Valerii Veseliak, [ValeriyVeseliak](https://github.com/ValeriyVeseliak).
 
-
+---
 ### Data
 ##### Compas dataset 
 https://github.com/propublica/compas-analysis <br/>
