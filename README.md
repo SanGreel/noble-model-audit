@@ -20,6 +20,11 @@ There are plenty of existing solutions to inspect models. Many of them work fine
 ---
 ### Audit examples
 ![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_sex.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_race.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot2.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/partial_dependence.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/feature_selection.png)
 
 
 ---
