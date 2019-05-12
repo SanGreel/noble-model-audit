@@ -2,7 +2,7 @@
 altair-data-*csv
 
 data/*
-
+audit_result/*
 
 # Created by https://www.gitignore.io/api/macos,python,jupyternotebook
 # Edit at https://www.gitignore.io/?templates=macos,python,jupyternotebook
