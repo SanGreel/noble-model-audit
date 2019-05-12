@@ -39,11 +39,11 @@ pip install -r requirements.txt
 
 ---
 ### Audit examples
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_sex.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_race.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot2.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/partial_dependence.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/feature_selection.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_sex.png)<br/>
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_race.png)<br/>
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot.png)<br/>
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot2.png)<br/>
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/partial_dependence.png)<br/>
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/feature_selection.png)<br/>
 ![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/forest_tree_interpretation_0.jpg)
 
