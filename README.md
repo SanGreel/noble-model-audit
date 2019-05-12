@@ -2,8 +2,8 @@
 
 #### Team
 
-1. Smyrnov Oleksandr, [smirale](https://github.com/smirale).
-2. Kurochkin Andrew, [SanGreel](https://github.com/SanGreel).
+1. Smyrnov Oleksandr, [smirale]().
+2. Kurochkin Andrew, [SanGreel]().
 
 #### Compas dataset 
 https://github.com/propublica/compas-analysis
