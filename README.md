@@ -19,7 +19,7 @@ There are plenty of existing solutions to inspect models. Many of them work fine
 
 ---
 ### Data
-##### Compas dataset 
+##### COMPAS dataset 
 https://github.com/propublica/compas-analysis <br/>
 https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing <br/>
 https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm <br/>
