@@ -1,0 +1,13 @@
+shap==0.28.5
+ds_lime==0.1.1.27
+numpy==1.14.5
+seaborn==0.8.1
+matplotlib==2.1.2
+pandas==0.23.1
+six==1.11.0
+aequitas==0.38.0
+lime==0.1.1.33
+pydot==1.4.1
+skater==1.1.2
+scikit_learn==0.21.0
+treeinterpreter==0.2.2
