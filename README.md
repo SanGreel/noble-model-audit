@@ -1,6 +1,6 @@
 ## Fairness audit for Random Forest model
 
-#### Team
+### Team
 1. Kurochkin Andrew, [SanGreel]().
 2. Oleh Misko, [Progern](https://github.com/Progern).
 3. Oleh Onyshchak, [OlehOnyshchak](https://github.com/OlehOnyshchak).
