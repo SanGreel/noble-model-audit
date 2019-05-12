@@ -1,6 +1,11 @@
-# noble-model-audit
+## Fairness audit for Random Forest model
 
-### Compas dataset 
+#### Team
+
+1. Smyrnov Oleksandr, [smirale](https://github.com/smirale).
+2. Kurochkin Andrew, [SanGreel](https://github.com/SanGreel).
+
+#### Compas dataset 
 https://github.com/propublica/compas-analysis
 
 https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
