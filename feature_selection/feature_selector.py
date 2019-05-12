@@ -24,17 +24,21 @@ class FeatureSelector:
         self.test_y = test_y
         self.feature_names = feature_names
         print("Done.")
+        print("-----------------------------------")
 
         print("Creating interpretator for model")
         self.interpreter = Interpretation(self.test_x, feature_names = self.test_x.columns)
         print("Done.")
+        print("-----------------------------------")
 
 
         print("Building SHAP explainer for Tree Model")
         self.explainer = shap.TreeExplainer(self.model)
         print("Done.")
+        print("-----------------------------------")
 
         print("Computing SHAP values for first 100 test samples...")
+        print("Attention! For a large dataset this procedure could take a while.")
         self.shap_values = self.explainer.shap_values(test_x[:100])
         print("Done.")
 
