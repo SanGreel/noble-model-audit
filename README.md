@@ -1,10 +1,24 @@
 ## Fairness audit for Random Forest model
+  A survey made in 2018 highlighted two main concerns about AI for nowadays: model fairness and AI singularity, - most of the respondents chose model fairness as the main potential problem of the whole industry. Data scientists are 1.5 times more likely to consider issues around algorithmic fairness dangerous than any upcoming singularity when computers become more intelligent than people, the most of any kind of developer. Many developers discussed systemic bias being built into algorithmic decision making and the danger of AI being used without the ability to inspect and reason about decision pathways [13].
+  There are plenty of existing solutions to inspect models. Many of them work fine for their purpose, some already aggregated different features inside themselves. One concern is that these systems are often overload and too generalized. Due to this fact, we decided to build a solution for fairness audit for Random Forest model.
+    
+  In this work we created a pipeline for complete machine learning process illumination:
+1. Found data used for risk assessment instruments (RAIs), COMPAS dataset that consists of a bunch of different sensitive features (sex, race, age, etc)
+2. Inspected bias in the dataset
+3. Built a model for recidivism prediction
+4. Evaluated bias in the model prediction
+5. Analyzed feature importance
+6. Showed interpretation for prediction for new observations, that hadn’t been shown to the model previously.
 
+---
 ### Team
 1. Kurochkin Andrew, [SanGreel]().
 2. Oleh Misko, [Progern](https://github.com/Progern).
 3. Oleh Onyshchak, [OlehOnyshchak](https://github.com/OlehOnyshchak).
 4. Valerii Veseliak, [ValeriyVeseliak](https://github.com/ValeriyVeseliak).
+
+---
+### Result examples
 
 ---
 ### Data
