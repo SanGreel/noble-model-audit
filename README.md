@@ -45,4 +45,5 @@ pip install -r requirements.txt
 ![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot2.png)
 ![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/partial_dependence.png)
 ![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/feature_selection.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/forest_tree_interpretation_0.jpg)
 
