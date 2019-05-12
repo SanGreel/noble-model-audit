@@ -18,16 +18,6 @@ There are plenty of existing solutions to inspect models. Many of them work fine
 4. Valerii Veseliak, [ValeriyVeseliak](https://github.com/ValeriyVeseliak).
 
 ---
-### Audit examples
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_sex.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_race.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot2.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/partial_dependence.png)
-![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/feature_selection.png)
-
-
----
 ### Data
 ##### Compas dataset 
 https://github.com/propublica/compas-analysis <br/>
@@ -46,4 +36,13 @@ pip install -r requirements.txt
 4. Run data preprocessing and preparation in the file [1_compas_data_preparation.ipynb](https://github.com/SanGreel/noble-model-audit/blob/master/1_compas_data_preparation.ipynb).
 5. Now You should train the model for audit from the file [2_recidivism_prediction_model_training.ipynb](https://github.com/SanGreel/noble-model-audit/blob/master/2_recidivism_prediction_model_training.ipynb).
 6. Congrats, now You are ready to go through fairness audit of Random Forest. All pipeline is in the file [3_recidivism_prediction_model_audit.ipynb](https://github.com/SanGreel/noble-model-audit/blob/master/3_recidivism_prediction_model_audit.ipynb).
+
+---
+### Audit examples
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_sex.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/EDA_race.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/fairness_plot2.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/partial_dependence.png)
+![](https://raw.githubusercontent.com/SanGreel/noble-model-audit/master/audit_result/feature_selection.png)
 
