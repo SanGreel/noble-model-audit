@@ -12,7 +12,7 @@ There are plenty of existing solutions to inspect models. Many of them work fine
 
 ---
 ### Team
-1. Kurochkin Andrew, [SanGreel]().
+1. Kurochkin Andrew, [SanGreel](https://github.com/SanGreel).
 2. Oleh Misko, [Progern](https://github.com/Progern).
 3. Oleh Onyshchak, [OlehOnyshchak](https://github.com/OlehOnyshchak).
 4. Valerii Veseliak, [ValeriyVeseliak](https://github.com/ValeriyVeseliak).
